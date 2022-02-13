@@ -1,0 +1,12 @@
+.message-wrapper {
+    @apply w-auto px-5 py-2 bg-gray-500 rounded-sm text-white fixed right-2 bottom-2 z-50 bg-gradient-to-b from-gray-600 to-gray-500;
+}
+
+.close-btn {
+    @apply w-25px h-25px border-2 border-white rounded-full flex justify-center content-center absolute -top-3 -left-3;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.close-btn span {
+    @apply text-sm text-gray-700 font-semibold leading-5;
+}

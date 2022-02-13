@@ -1,0 +1,75 @@
+.nft-card {
+    @apply border border-gray-400 bg-gray-800 shadow rounded-xl overflow-hidden;
+}
+
+.nft-title {
+    @apply px-4 py-1 text-white;
+}
+
+.nft-title > div {
+    @apply mt-2 text-sm flex items-center;
+    height: 1.5rem;
+}
+
+.nft-title > div > div,
+.nft-title > div > span {
+    margin-right: 3px !important;
+}
+
+.nft-image {
+    @apply p-2;
+    overflow: hidden;
+    position: relative;
+}
+.nft-image_file {
+    width: 344px;
+}
+
+/* override the disgusting next/image component implementation */
+.nft-image > span,
+.nft-image > div,
+.nft-image > span > img,
+.nft-image > div > img {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 4px;
+}
+
+.nft-description-wrapper {
+    @apply px-4 py-2;
+}
+.nft-description {
+    height: 60px;
+    overflow: hidden;
+}
+
+.nft-description p {
+    @apply text-gray-400;
+    line-height: 1.2rem;
+}
+
+.nft-price-wrapper {
+    @apply m-0 py-0 px-1 bg-black flex justify-between items-center;
+}
+
+.nft-price {
+    @apply mr-1 p-2 text-sm font-semibold text-white flex items-center;
+}
+
+.nft-price > span {
+    margin-right: 5px;
+}
+
+.nft-buy {
+    @apply mr-2 px-3 py-0 bg-turquoise text-white text-sm font-semibold rounded-lg;
+    text-shadow: -1px -1px 1px rgb(0 0 0 / 25%), 0px 1px 1px rgb(0 0 0 / 25%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0 2px 1px rgb(0 0 0 / 25%),
+        inset -5px -5px 5px rgb(0 0 0 / 13%);
+}
+
+@media (min-width: 640px) {
+    .nft-image_file {
+        width: 450px;
+    }
+}
